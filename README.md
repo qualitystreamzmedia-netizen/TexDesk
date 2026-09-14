@@ -1,17 +1,17 @@
 # TexDesk for Windows
 
-TexDesk 0.15.8 is a desktop LaTeX editor with automatic compilation and PDF previews.
+TexDesk 0.15.9 is a desktop LaTeX editor with automatic compilation and PDF previews.
 
 [Download the Windows installer](https://github.com/qualitystreamzmedia-netizen/TexDesk/releases/latest)
 
 ## Installation
 
-1. Download TexDesk-0.15.8-Setup-x64.exe from this repository's Releases page.
+1. Download TexDesk-0.15.9-Setup-x64.exe from this repository's Releases page.
 2. Run the installer. It installs for your Windows account and creates a TexDesk shortcut.
-3. Install MiKTeX or TeX Live if you do not already have a LaTeX distribution. Install any packages required by your documents, including pgfplots for statistical plots.
-4. Microsoft Edge WebView2 Runtime is required for the embedded PDF preview.
+3. On Required components, leave missing components checked to install MiKTeX and WebView2. An internet connection is required; setup skips components already detected.
+4. If you prefer to install a component yourself later, uncheck it. Compilation requires MiKTeX or TeX Live; PDF preview requires WebView2.
 
-This installer includes the .NET runtime. It does not bundle a LaTeX distribution or automatically install LaTeX packages. The installer is not digitally signed.
+This installer includes the .NET runtime. It downloads MiKTeX (about 150 MB plus plotting packages) when missing and installs pgfplots for a new MiKTeX installation. The bundled Microsoft bootstrapper downloads WebView2 when missing. Existing LaTeX installations and their packages are left unchanged; documents may require additional packages. The installer is not digitally signed.
 
 ## Included features
 
