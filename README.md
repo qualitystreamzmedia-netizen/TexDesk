@@ -1,6 +1,6 @@
 # TexDesk
 
-TexDesk is a Windows LaTeX editor for writing mathematics, building plots, and preparing teaching materials. Version **0.31.1**.
+TexDesk is a Windows LaTeX editor for writing mathematics, building plots, and preparing teaching materials. Version **0.32.0**.
 
 ## Start writing
 
@@ -29,6 +29,10 @@ Review the generated answers and student PDFs before distributing them. Ordinary
 Windows x64. The installer includes the .NET runtime and offers installation of missing MiKTeX and WebView2 components; prerequisite downloads require internet access. R is optional and must be installed separately for R statistics and numerical integration. LaTeX may download packages on first use. Optional AI features require separate configuration; the ordinary editor, plots and supported mathematics run locally.
 
 The installer is not digitally signed.
+
+## Changes in 0.32.0
+
+Teaching → Assignment from a prompt prepares editable multiple-choice, matching and single-blank question banks. Use the built-in Math 161 example without a key, or your own OpenAI API key to draft new questions. Review and edit alternatives and arithmetic rules, generate reproducible tests, preview student/instructor views, and export PDFs or VIU Learn CSV pools. CSV contains fixed variants; one blank imports as short answer. Live course import and grading must be checked in VIU Learn.
 
 ## Changes in 0.31.1
 
