@@ -1,6 +1,6 @@
 # TexDesk
 
-TexDesk is a Windows LaTeX editor for writing mathematics, building plots, and preparing teaching materials. Version **0.33.0**.
+TexDesk is a Windows LaTeX editor for writing mathematics, building plots, and preparing teaching materials. Version **0.33.1**.
 
 ## Start writing
 
@@ -29,6 +29,10 @@ Review the generated answers and student PDFs before distributing them. Ordinary
 Windows x64. The installer includes the .NET runtime and offers installation of missing MiKTeX and WebView2 components; prerequisite downloads require internet access. R is optional and must be installed separately for R statistics and numerical integration. LaTeX may download packages on first use. Optional AI features require separate configuration; the ordinary editor, plots and supported mathematics run locally.
 
 The installer is not digitally signed.
+
+## Changes in 0.33.1
+
+Integral working now displays explicit multiplication between numerical factors when substituting bounds, including inside exponential arguments and powers. For example, exp(2 × 1) remains distinct from exp(21).
 
 ## Changes in 0.33.0
 
