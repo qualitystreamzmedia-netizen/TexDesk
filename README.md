@@ -1,42 +1,45 @@
-# TexDesk for Windows
+# TexDesk
 
-TexDesk 0.19.0 is a desktop LaTeX editor with automatic compilation and PDF previews.
+TexDesk is a Windows LaTeX editor for writing mathematics, building plots, and preparing teaching materials. Version **0.31.1**.
 
-[Download the Windows installer](https://github.com/qualitystreamzmedia-netizen/TexDesk/releases/latest)
+## Start writing
 
-## Installation
+Open a `.tex` document or choose **New**. Type in the source editor and enable **Compile as I type** to update the PDF after a short pause. Successful builds also save the PDF beside the main source file. **F1** opens the searchable help guide, with copyable examples.
 
-1. Download TexDesk-0.19.0-Setup-x64.exe from this repository's Releases page.
-2. Run the installer. It installs for your Windows account and creates a TexDesk shortcut.
-3. On Required components, leave missing components checked to install MiKTeX and WebView2. An internet connection is required; setup skips components already detected.
-4. If you prefer to install a component yourself later, uncheck it. Compilation requires MiKTeX or TeX Live; PDF preview requires WebView2.
+## What you can do
 
-This installer includes the .NET runtime. It downloads MiKTeX (about 150 MB plus plotting packages) when missing and installs pgfplots for a new MiKTeX installation. The bundled Microsoft bootstrapper downloads WebView2 when missing. Existing LaTeX installations and their packages are left unchanged; documents may require additional packages. The installer is not digitally signed.
+- Work in two source columns, move a document to the second column, and restore the previous workspace layout.
+- Follow the source cursor in the PDF, use a live external PDF window, and search or preview replacements in source files.
+- Insert symbols, fractions, calculus templates, tables and boxes; use command completion and review suggested spelling or package corrections.
+- Plot explicit or implicit equations, including several curves together. Add shaded regions with optional area labels.
+- Plot common statistical distributions with shading and optional probabilities. Edit saved plot settings and browse figures referenced by the active file.
+- Solve supported elementary integrals with worked steps; simplify supported mathematical expressions. These are limited local mathematics tools, not a general computer algebra system.
+- Prepare student and instructor copies, store reusable questions, and generate 1–30 randomized versions using parameter rules or local R calculations.
+- Preview inserted items, adjust formatting styles and table borders, inspect compiler errors, and recover earlier saved document versions.
+- Export a PDF or package the main source and supported local dependencies in a ZIP.
 
-## New in 0.19.0
+## Randomized teaching materials
 
-- **Calculus:** editable fields for definite and indefinite integrals, first-order derivatives, partial derivatives, and limits.
-- **Command suggestions:** suggestions in both editor columns as you type. Arrow keys select; Tab accepts; Esc dismisses. Possible spelling corrections require your selection and can be undone.
-- **Symbols:** 116 searchable mathematical symbols with automatic addition of required packages.
-- **Implicit plots:** equations such as `x^2+y^2=25`, `x*y=1`, and `y^2=x^3-x` use the existing Plot equation window.
-- **Smoother curves:** denser sampling and connected contour segments reduce artificial gaps while preserving genuine discontinuities.
+Use **Teaching → Randomize** for multi-question tests. Load one of the three-question examples, adjust the questions and matching solutions, choose a seed and version count, and validate all versions before generation. The help guide explains placeholders, parameter rules, R scripts, marks, answer spaces and student/instructor views in detail.
 
-Plot code remains in companion files, leaving short references in your document. Numerical plots may miss tiny features, isolated points, or repeated roots. Command suggestions use a curated catalog and macros declared in the current file; they are not a validator for every LaTeX package.
+Review the generated answers and student PDFs before distributing them. Ordinary student-mode source documents can still contain hidden solutions; share the intended student PDFs rather than the full project or generation folder.
 
-## Included features
+## Requirements
 
-- Automatic source saving, compilation, and PDF preview updates.
-- Automatic PDF saving beside the main .tex file after successful compilation.
-- Two editor columns, file closing, and source search with visible highlights.
-- Statistical plots, probability shading, plot resizing, and readable plot references.
-- Generated figure files hidden by default, with an option to show them.
-- Live external PDF preview and cursor-to-PDF navigation.
-- Guided corrections and optional AI prompts using your own API key.
+Windows x64. The installer includes the .NET runtime and offers installation of missing MiKTeX and WebView2 components; prerequisite downloads require internet access. R is optional and must be installed separately for R statistics and numerical integration. LaTeX may download packages on first use. Optional AI features require separate configuration; the ordinary editor, plots and supported mathematics run locally.
 
-Source files remain on your computer. Optional AI requests send the prompt and selected content to the configured service when you use that feature. No API key is supplied with this installer.
+The installer is not digitally signed.
 
-## Updating and recovery
+## Changes in 0.31.1
 
-Installing over an existing TexDesk installation updates the app. Documents are not included in the installer. Source backups are kept in each project's .texdesk/recovery folder. Compilation errors retain the last successful PDF. If another program locks the PDF, close that program and compile again to save the update.
+- Project export follows nested `.TEX`, `.STY` and `.CLS` files regardless of extension case.
+- Comments after LaTeX table row endings no longer cause false missing-file errors during export.
+- Export checks the source/dependency snapshot and reports conflicts between an included figure and the output PDF filename.
+- Oversized dependencies are checked before their contents are loaded.
+- Updated documentation and export regression checks.
 
-This repository distributes Windows installers; it does not contain the application source code.
+Project export supports literal dependency paths inside the main document folder. It does not automatically package every possible LaTeX dependency mechanism. If export reports an unsupported path or command, resolve that message before sharing the archive.
+
+## Download
+
+Get the installer from [GitHub Releases](https://github.com/qualitystreamzmedia-netizen/TexDesk/releases/latest). The public repository contains installers and documentation only; it does not contain application source or personal teaching documents.
