@@ -1,6 +1,6 @@
 # TexDesk
 
-TexDesk is a Windows LaTeX editor for writing mathematics, building plots, and preparing teaching materials. Version **0.32.0**.
+TexDesk is a Windows LaTeX editor for writing mathematics, building plots, and preparing teaching materials. Version **0.33.0**.
 
 ## Start writing
 
@@ -29,6 +29,12 @@ Review the generated answers and student PDFs before distributing them. Ordinary
 Windows x64. The installer includes the .NET runtime and offers installation of missing MiKTeX and WebView2 components; prerequisite downloads require internet access. R is optional and must be installed separately for R statistics and numerical integration. LaTeX may download packages on first use. Optional AI features require separate configuration; the ordinary editor, plots and supported mathematics run locally.
 
 The installer is not digitally signed.
+
+## Changes in 0.33.0
+
+Build assignments without an API key from 72 topic families: calculus I–IV, introductory statistics, algebra, linear algebra and discrete mathematics. In **Teaching → Assignment from a prompt**, browse and select topics or enter supported topic keywords, then choose **Create offline assignment**. This is an initial library of selected topics, not a complete course syllabus or a general language model. Review the reported topic matches and generated questions.
+
+Numerical templates generate reproducible values, with optional multiple-choice conversion. Existing conceptual families provide matching, multiple-choice and short-answer questions. Source attribution is preserved in editable assignments, student/instructor PDFs and VIU Learn CSV. One average-velocity family adapts Active Calculus under CC BY-SA 4.0; its notice and editable educational template are included with the installer.
 
 ## Changes in 0.32.0
 
