@@ -1,4 +1,4 @@
-# TexDesk 1.0
+# TexDesk 1.2.0
 
 **Your ideas, beautifully typeset.**
 
@@ -9,7 +9,7 @@ TexDesk is a Windows LaTeX editor for writing mathematics, creating plots, and p
 
 ## Download and get started
 
-Download **TexDesk-1.0.0-Setup-x64.exe** from the [TexDesk 1.0 release](https://github.com/qualitystreamzmedia-netizen/TexDesk/releases/tag/v1.0.0).
+Download **TexDesk-1.2.0-Setup-x64.exe** from the [TexDesk 1.2.0 release](https://github.com/qualitystreamzmedia-netizen/TexDesk/releases/tag/v1.2.0).
 
 1. Run the installer. It includes the .NET runtime and offers installation of missing MiKTeX and Microsoft Edge WebView2 components.
 2. Open TexDesk and choose **New**, or open an existing `.tex` file.
@@ -18,12 +18,17 @@ Download **TexDesk-1.0.0-Setup-x64.exe** from the [TexDesk 1.0 release](https://
 
 Save your work and close TexDesk before updating an existing installation. Updates are downloaded and installed separately.
 
+## Linux preview
+
+[Download TexDesk Linux Preview 0.7.0](https://github.com/qualitystreamzmedia-netizen/TexDesk/releases/tag/linux-v0.7.0). The archive contains the self-contained x64 app, installation script and help. Tested on Ubuntu 24.04 under WSL 2/WSLg. Install the native dependencies listed in the release help before running it. This preview includes plotting, assignments, mathematics tools and a table builder with individual line thicknesses; it does not yet include the full Windows feature set.
+
 ## Write and preview
 
 - Edit in one or two source columns and restore your workspace layout.
 - Use the embedded PDF preview or TexDesk's live external PDF window.
 - Follow the source cursor in the preview, find text, and review replacements.
 - Insert symbols, fractions, powers, subscripts, tables and boxes using guided controls.
+- Set table outline, heading and inner-line thicknesses, with overrides for individual horizontal or vertical boundaries.
 - Use command suggestions and review supported spelling, package and compilation corrections.
 - Export PDFs or package the main document and supported local dependencies in a ZIP.
 
@@ -34,6 +39,7 @@ Save your work and close TexDesk before updating an existing installation. Updat
 - Plot common statistical distributions with optional shading and probability labels.
 - Adjust plot sizes and edit saved settings; browse generated figures referenced by the active document.
 - Solve supported elementary integrals with worked steps and simplify supported expressions.
+- Use supported integration-by-parts and nonlinear-substitution methods, and evaluate supported convergent improper integrals with one-sided limits.
 - Use optional local R tools for statistics and numerical integration.
 
 ## Prepare teaching materials
