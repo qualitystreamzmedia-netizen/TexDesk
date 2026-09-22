@@ -1,4 +1,4 @@
-# TexDesk 1.2.0
+# TexDesk 1.4.1
 
 **Your ideas, beautifully typeset.**
 
@@ -9,7 +9,7 @@ TexDesk is a Windows LaTeX editor for writing mathematics, creating plots, and p
 
 ## Download and get started
 
-Download **TexDesk-1.2.0-Setup-x64.exe** from the [TexDesk 1.2.0 release](https://github.com/qualitystreamzmedia-netizen/TexDesk/releases/tag/v1.2.0).
+Download **TexDesk-1.4.1-Setup-x64.exe** from the [TexDesk 1.4.1 release](https://github.com/qualitystreamzmedia-netizen/TexDesk/releases/tag/v1.4.1).
 
 1. Run the installer. It includes the .NET runtime and offers installation of missing MiKTeX and Microsoft Edge WebView2 components.
 2. Open TexDesk and choose **New**, or open an existing `.tex` file.
@@ -20,7 +20,18 @@ Save your work and close TexDesk before updating an existing installation. Updat
 
 ## Linux preview
 
-[Download TexDesk Linux Preview 0.7.0](https://github.com/qualitystreamzmedia-netizen/TexDesk/releases/tag/linux-v0.7.0). The archive contains the self-contained x64 app, installation script and help. Tested on Ubuntu 24.04 under WSL 2/WSLg. Install the native dependencies listed in the release help before running it. This preview includes plotting, assignments, mathematics tools and a table builder with individual line thicknesses; it does not yet include the full Windows feature set.
+[Download TexDesk Linux Preview 0.9.1](https://github.com/qualitystreamzmedia-netizen/TexDesk/releases/tag/linux-v0.9.1). The archive contains the self-contained x64 app, installation script and help. Tested on Ubuntu 24.04 under WSL 2/WSLg. Install the native dependencies listed in the release help before running it. This preview includes plotting, assignments, mathematics tools and a table builder with individual line thicknesses; it does not yet include the full Windows feature set.
+
+## New in this update
+
+- Line numbers, clearer build diagnostics, cancellable compilation, and background MiKTeX package installation.
+- Local recovery drafts, project-wide search, editor appearance preferences and setup checks.
+- Two-way source/PDF navigation, reference and citation completion, and a collapsible document outline.
+- Optional review before applying generated changes, with coordinated insertion/package Undo on Windows.
+- Reusable teaching export presets and advisory accessibility checks.
+- Updated help and examples, using **your LMS** and **your institution** throughout.
+
+Windows includes a local linked PDF view alongside its original viewer. Linux preview supports source/PDF navigation in its image preview and retains a smaller feature set than Windows.
 
 ## Write and preview
 
@@ -69,7 +80,7 @@ Ordinary editing, supported plotting and offline question generation do not requ
 
 ## Acknowledgements
 
-TexDesk uses .NET, Microsoft Edge WebView2 and Math.NET Numerics. PDF compilation uses your LaTeX installation, and optional statistical tools use R.
+TexDesk uses .NET, Microsoft Edge WebView2, PDF.js and Math.NET Numerics. PDF compilation uses your LaTeX installation, and optional statistical tools use R.
 
 One offline average-velocity family adapts Matthew Boelkins's *Active Calculus*, second edition, section 1.1, Preview Activity 1.1.1(c), under CC BY-SA 4.0. Attribution remains attached to exported questions. The installer includes the notice and editable educational template under **ThirdPartyNotices**. Other new offline templates are original TexDesk material.
 
