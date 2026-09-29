@@ -1,4 +1,4 @@
-# TexDesk 1.4.1
+# TexDesk 1.7.0
 
 **Your ideas, beautifully typeset.**
 
@@ -9,7 +9,7 @@ TexDesk is a Windows LaTeX editor for writing mathematics, creating plots, and p
 
 ## Download and get started
 
-Download **TexDesk-1.4.1-Setup-x64.exe** from the [TexDesk 1.4.1 release](https://github.com/qualitystreamzmedia-netizen/TexDesk/releases/tag/v1.4.1).
+Download **TexDesk-1.7.0-Setup-x64.exe** from the [TexDesk 1.7.0 release](https://github.com/qualitystreamzmedia-netizen/TexDesk/releases/tag/v1.7.0).
 
 1. Run the installer. It includes the .NET runtime and offers installation of missing MiKTeX and Microsoft Edge WebView2 components.
 2. Open TexDesk and choose **New**, or open an existing `.tex` file.
@@ -24,12 +24,13 @@ Save your work and close TexDesk before updating an existing installation. Updat
 
 ## New in this update
 
-- Line numbers, clearer build diagnostics, cancellable compilation, and background MiKTeX package installation.
-- Local recovery drafts, project-wide search, editor appearance preferences and setup checks.
-- Two-way source/PDF navigation, reference and citation completion, and a collapsible document outline.
-- Optional review before applying generated changes, with coordinated insertion/package Undo on Windows.
-- Reusable teaching export presets and advisory accessibility checks.
-- Updated help and examples, using **your LMS** and **your institution** throughout.
+- Added **Plots → R workspace**: edit R code, preview graphs and results, then insert the exact preview into your document.
+- Import CSV/TSV data as `data`; optional Excel import uses the separately installed R package `readxl` and reads the first worksheet.
+- Open/save R scripts, inspect data columns, control the random seed, and stop a running preview.
+- Included sample data and an R analysis under **Examples/RWorkspace**.
+- Includes the earlier local voice-input and teaching updates: expanded mathematics dictation, 88 offline topic families, answer checks, parameter constraints, and student/instructor previews.
+
+R runs locally with your account's permissions. R and optional packages are installed separately. Preview results are inserted as standard LaTeX and image files; R is not automatically executed when the document compiles.
 
 Windows includes a local linked PDF view alongside its original viewer. Linux preview supports source/PDF navigation in its image preview and retains a smaller feature set than Windows.
 
@@ -57,7 +58,7 @@ Windows includes a local linked PDF view alongside its original viewer. Linux pr
 
 - Create separate student copies and instructor keys, with configurable answer visibility.
 - Save reusable questions and generate 1–30 reproducible test versions using parameter rules or local R.
-- Build assignments from an offline library of **72 topic families** covering selected calculus I–IV, introductory statistics, algebra, linear algebra and discrete mathematics topics.
+- Build assignments from an offline library of **88 topic families** covering selected calculus I–IV, introductory statistics, algebra, linear algebra and discrete mathematics topics.
 - Select topics directly or use supported topic keywords, without an API key.
 - Review and edit multiple-choice, matching and short-answer questions; preview versions before export.
 - Export student PDFs, instructor keys and Brightspace-compatible CSV question pools for your LMS.
@@ -80,10 +81,11 @@ Ordinary editing, supported plotting and offline question generation do not requ
 
 ## Acknowledgements
 
-TexDesk uses .NET, Microsoft Edge WebView2, PDF.js and Math.NET Numerics. PDF compilation uses your LaTeX installation, and optional statistical tools use R.
+TexDesk uses .NET, Microsoft Edge WebView2, PDF.js, Math.NET Numerics, Vosk and NAudio. PDF compilation uses your LaTeX installation, and optional statistical tools use R.
 
-One offline average-velocity family adapts Matthew Boelkins's *Active Calculus*, second edition, section 1.1, Preview Activity 1.1.1(c), under CC BY-SA 4.0. Attribution remains attached to exported questions. The installer includes the notice and editable educational template under **ThirdPartyNotices**. Other new offline templates are original TexDesk material.
+Some offline question families adapt openly licensed material from Active Calculus, OpenIntro Statistics and Notes on Diffy Qs. Attribution remains attached to exported questions. The installer includes individual licences, source references and editable educational adaptations under **ThirdPartyNotices**.
 
 ## This repository
 
-This public repository distributes installers and documentation. Application source code is not included.
+This public repository distributes installers and documentation. Application source code is not included.
+
