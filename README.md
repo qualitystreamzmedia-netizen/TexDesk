@@ -1,4 +1,4 @@
-# TexDesk 1.7.0
+# TexDesk 1.7.1
 
 **Your ideas, beautifully typeset.**
 
@@ -9,7 +9,7 @@ TexDesk is a Windows LaTeX editor for writing mathematics, creating plots, and p
 
 ## Download and get started
 
-Download **TexDesk-1.7.0-Setup-x64.exe** from the [TexDesk 1.7.0 release](https://github.com/qualitystreamzmedia-netizen/TexDesk/releases/tag/v1.7.0).
+Download **TexDesk-1.7.1-Setup-x64.exe** from the [TexDesk 1.7.1 release](https://github.com/qualitystreamzmedia-netizen/TexDesk/releases/tag/v1.7.1).
 
 1. Run the installer. It includes the .NET runtime and offers installation of missing MiKTeX and Microsoft Edge WebView2 components.
 2. Open TexDesk and choose **New**, or open an existing `.tex` file.
@@ -23,6 +23,10 @@ Save your work and close TexDesk before updating an existing installation. Updat
 [Download TexDesk Linux Preview 0.9.1](https://github.com/qualitystreamzmedia-netizen/TexDesk/releases/tag/linux-v0.9.1). The archive contains the self-contained x64 app, installation script and help. Tested on Ubuntu 24.04 under WSL 2/WSLg. Install the native dependencies listed in the release help before running it. This preview includes plotting, assignments, mathematics tools and a table builder with individual line thicknesses; it does not yet include the full Windows feature set.
 
 ## New in this update
+
+- Type `\rplot{hist(rnorm(2000), col="red")}` directly in the body of your main LaTeX document. TexDesk generates the plot before compiling, keeping the source unchanged.
+- The first compile asks for permission to run that document's R code for the session. Each command has a fresh R session and reproducible seed (161 by default).
+- Inline R supports literal commands in the main document, not macro definitions, conditional branches, or included files. Use the R workspace to insert portable standard-LaTeX plots or text output.
 
 - Added **Plots → R workspace**: edit R code, preview graphs and results, then insert the exact preview into your document.
 - Import CSV/TSV data as `data`; optional Excel import uses the separately installed R package `readxl` and reads the first worksheet.
@@ -87,5 +91,6 @@ Some offline question families adapt openly licensed material from Active Calcul
 
 ## This repository
 
-This public repository distributes installers and documentation. Application source code is not included.
+This public repository distributes installers and documentation. Application source code is not included.
+
 
